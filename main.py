@@ -111,7 +111,7 @@ while True:
                     try:
                         image = produit["photo"]["url"]
                     except:
-                        image = "https://images-na.ssl-images-amazon.com/images/I/41bLP6NzvKL.jpg"
+                        image = "[LINK OFF IMAGE YOU WANT]"
                         
                     countUrl = links[linkCount]
 
