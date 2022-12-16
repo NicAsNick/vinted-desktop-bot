@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+header div {
+  margin-left: 50px;
+  margin-right: 50px;
+
+  line-height: 6vh;
+}
+
+aside {
+  background-color: #f6f5f5;
+  width: fit-content;
+  height: 90vh;
+  position: absolute;
+  width: 250px;
+}
+
+.menu {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu a {
+  margin-top: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+main {
+  margin-left: 250px;
+  position: relative;
+}
+
+.container_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10vh;
+}
+
+.container_top p {
+  margin: 2vw;
+}
+
+.total_running {
+  font-size: 1.2em;
+}
+
+.number_running {
+  font-weight: bold;
+}
+
+.new_task {
+  padding: 15px;
+  text-align: center;
+  width: 150px;
+  color: white;
+  background-color: #23b1ba;
+  border-radius: 5px;
+}
+
+.container_tasks {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70vw;
+  background-color: #f6f5f5;
+  margin: 0 auto;
+  height: 10vh;
+  margin-bottom: 15px;
+}
+
+.green {
+  width: 30px;
+  height: 30px;
+  background-color: #27ea3a;
+  border-radius: 100%;
+}
+
+.red {
+  width: 30px;
+  height: 30px;
+  background-color: #ea3327;
+  border-radius: 100%;
+}
+
+.title_link p {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 2px;
+}
+
+.title_link a {
+  font-size: 0.7em;
+  color: gray;
+}
+
+/* MODAL */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.input_task {
+  width: 200px;
+  height: 3vh;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.input_vinted {
+  width: 400px;
+  height: 3vh;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.done_modal {
+    width: 150px;
+    background-color: #23b1ba;
+    color: white;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title_modal {
+    width: fit-content;
+    font-size: 1.2em;
+}

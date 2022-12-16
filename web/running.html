@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="/eel.js"></script>
+    <script
+      src="https://kit.fontawesome.com/769e6be0c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="eel.js"></script>
+
+    <script>
+      function addArticle(
+        titre,
+        link_article,
+        marque,
+        taille,
+        prix,
+        srcimage,
+        date_post
+      ) {
+        var bottom_container = document.querySelector(".bottom_container");
+        var article = document.createElement("article");
+
+        var title = document.createElement("a");
+        title.className = "title_article";
+        title.href = link_article;
+        title.target = "_blank"
+        title.innerHTML = titre;
+
+         var container_sections_article = document.createElement("div");
+        container_sections_article.className = "container_sections_article";
+
+        var container_left = document.createElement("div");
+        container_left.className = "container_left";
+
+        var li = document.createElement("li");
+
+        
+
+        var title_section_marque = document.createElement("p");
+        title_section_marque.className = "title_section";
+        title_section_marque.innerHTML = "Marque";
+
+        var rep_section_mrq = document.createElement("p");
+        rep_section_mrq.className = "rep_section";
+        rep_section_mrq.innerHTML = marque;
+
+        
+
+        var title_section_taille = document.createElement("p");
+        title_section_taille.className = "title_section";
+        title_section_taille.innerHTML = "Taille";
+
+        var rep_section_taille = document.createElement("p");
+        rep_section_taille.className = "rep_section";
+        rep_section_taille.innerHTML = taille;
+
+        
+        
+        var title_section_price = document.createElement("p");
+        title_section_price.className = "title_section";
+        title_section_price.innerHTML = "Price";
+
+        var rep_section_price = document.createElement("p");
+        rep_section_price.className = "rep_section";
+        rep_section_price.innerHTML = prix;
+
+
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+        
+
+        var container_right = document.createElement("div");
+        container_right.className = "container_right";
+
+        var img = document.createElement("img");
+        img.src = srcimage;
+
+
+        var timestamp = document.createElement("p");
+        timestamp.className = "timestamp";
+        timestamp.innerHTML = date_post;
+        
+        bottom_container.append(article)
+        article.appendChild(title);
+        article.appendChild(container_sections_article);
+        container_sections_article.appendChild(container_left);
+        ul = document.createElement("ul")
+
+        container_left.appendChild(ul)
+
+        ul.appendChild(li);
+
+        li.appendChild(title_section_marque);
+        li.appendChild(rep_section_mrq);
+
+        ul.appendChild(li1);
+        li1.appendChild(title_section_taille);
+        li1.appendChild(rep_section_taille);
+
+        
+        ul.appendChild(li2);
+        li2.appendChild(title_section_price);
+        li2.appendChild(rep_section_price);
+
+        container_sections_article.appendChild(container_right)
+        container_right.appendChild(img)
+
+        article.appendChild(timestamp);
+      }
+      eel.expose(addArticle);
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Vinted BOT</p>
+      </div>
+      <div class="pseudo"><p>Nelphax#2349</p></div>
+    </header>
+
+    <aside>
+      <div class="menu">
+        <a href="index.html"
+          ><i class="fa-solid fa-chart-line"></i> Dashboard</a
+        >
+        <a href="tasks.html"><i class="fa-solid fa-list-check"></i> Tasks</a>
+        <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+      </div>
+    </aside>
+
+    <main>
+      <div class="bottom_container">
+        <div class="header_bottom_container">
+          <p class="all">ALL</p>
+          <p>View more -></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+https://www.vinted.fr/vetements?brand_id[]=88&order=newest_first&disabled_personalization=true;ralph
+https://www.vinted.fr/vetements?brand_id[]=304&order=newest_first&disabled_personalization=true;Lacoste
